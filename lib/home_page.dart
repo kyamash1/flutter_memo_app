@@ -11,11 +11,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<String> listItems = [];
-  List<String> completedItems = [];
-
-  final TextEditingController eCtrl = TextEditingController();
-
   Future<void> _init() async {
     setState(() {});
   }
@@ -30,7 +25,6 @@ class _HomePageState extends State<HomePage> {
   void dispose() {
     //ページがdispose（ページの切り替え？）が起きたときに
     //コントローラーの中身を削除する
-    eCtrl.dispose();
     super.dispose();
   }
 
