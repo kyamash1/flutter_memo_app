@@ -14,8 +14,6 @@ class _HomePageState extends State<HomePage> {
   List<String> listItems = [];
   List<String> completedItems = [];
 
-  bool _validate = false;
-
   final TextEditingController eCtrl = TextEditingController();
 
   Future<void> _init() async {
